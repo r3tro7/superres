@@ -1,0 +1,18 @@
+body {
+    background-color: #f8f9fa; /* light grey background */
+    color: #333; /* dark grey text */
+}
+
+h1, h2 {
+    color: #007bff; /* Bootstrap primary color */
+}
+
+img {
+    border: 1px solid #dee2e6; /* light grey border */
+    border-radius: 4px; /* rounded corners */
+    transition: transform 0.2s; /* smooth transform effect */
+}
+
+img:hover {
+    transform: scale(1.05); /* slightly enlarge images on hover */
+}

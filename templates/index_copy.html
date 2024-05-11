@@ -1,0 +1,24 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Processing Application</title>
+</head>
+<body>
+    <h1>Upload Image for Processing</h1>
+    <form method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload Image">
+    </form>
+
+    {% if input_image %}
+        <h2>Input Image</h2>
+        <img src="{{ input_image }}" alt="Input Image">
+    {% endif %}
+
+    {% if output_image %}
+        <h2>Processed Image</h2>
+        <img src="{{ output_image }}" alt="Processed Image">
+    {% endif %}
+</body>
+</html>
